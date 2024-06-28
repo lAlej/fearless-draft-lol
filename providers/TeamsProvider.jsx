@@ -51,8 +51,6 @@ export const TeamProvider = ({ children }) => {
   });
 
   const updateBans = (newBan, team) => {
-
-    console.log("ban: ", newBan, "team: ", team)
     setTeamsPickers((prev) => {
       let oldBans = { ...prev };
 
@@ -60,7 +58,6 @@ export const TeamProvider = ({ children }) => {
 
       oldBans[team][turn].ban = newBan.image.full;
 
-      console.log("newObjetc: ", oldBans)
 
       return oldBans;
     });

@@ -74,8 +74,6 @@ export default function Champions() {
       (player) => player.name === teamData.whosPicking
     );
 
-    console.log(searchPlayer)
-
     if (teamData.banning) {
       if (searchPlayer.ban === "") {
         buttonDisabled = true;
